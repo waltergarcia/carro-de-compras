@@ -4,12 +4,14 @@ import Layout from './components/Layout'
 import Navbar from './components/Navbar'
 import Title from './components/Title'
 
+const BASE_URL = 'https://waltergarcia.github.io/carro-de-compras'
+
 class App extends Component {
   state = {
     productos: [
-      {name: 'Tomate', price: 1500, img: './carro-de-compras/productos/tomate.jpg'},
-      {name: 'Arbejas', price: 2500, img: './carro-de-compras/productos/arbejas.jpg'},
-      {name: 'Lechuga', price: 500, img: './carro-de-compras/productos/lechuga.jpg'}
+      {name: 'Tomate', price: 1500, img: BASE_URL + '/productos/tomate.jpg'},
+      {name: 'Arbejas', price: 2500, img: BASE_URL + '/productos/arbejas.jpg'},
+      {name: 'Lechuga', price: 500, img: BASE_URL + '/productos/lechuga.jpg'}
     ],
     carro: [],
     esCarroVisible: false
